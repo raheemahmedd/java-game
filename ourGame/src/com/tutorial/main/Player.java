@@ -18,8 +18,8 @@ public class Player extends GameObject {
 		
 		x+=velX;
 		y+=velY;
-		x=Game.clamp(x, 0, Game.WIDTH - 37);
-		y=Game.clamp(y, 0, Game.HEIGHT - 60);
+		x=Game.clamp(x,-5 , Game.WIDTH - 55);
+		y=Game.clamp(y, -5, Game.HEIGHT - 70);
 	}
 
 	public void render(Graphics g) {
