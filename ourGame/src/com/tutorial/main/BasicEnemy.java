@@ -11,8 +11,8 @@ public class BasicEnemy extends GameObject{
 	public void tick() {
 		x+=velX;
 		y+=velY;
-		if(y<=0 || y>=Game.HEIGHT -32) velY*=-1;
-		if(x<=0 || x>=Game.HEIGHT -32) velX*=-1;	
+		if(y<=0 || y>= Game.HEIGHT - 70) velY*=-1;
+		if(x<=0 || x>= Game.WIDTH - 45) velX*=-1;	
  	}
 	
 	public void render(Graphics g) {
